@@ -105,4 +105,4 @@ train_data  = trainset()
 trainloader = DataLoader(train_data, batch_size=4, shuffle=True)
 
 for step, (batch_x, batch_y) in enumerate(trainloader):
-    print('step:', step, '| batch x:', batch_x.numpy(), '| batch_y:', batch_y.numpy())
+    print('step:', step, '| batch x size :', batch_x.size(), '| batch_y size:', batch_y.size())
